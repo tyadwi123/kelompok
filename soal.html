@@ -1,141 +1,36 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kuis Interaktif</title>
 </head>
 <body>
     <div>
-        <p>1. Apa output dari kode berikut?<br><code>let x = 5;<br>let y = 3;<br>console.log(x + y);</code></p>
-        <input type="radio" name="js1" value="A"> A. 8<br><br>
-        <input type="radio" name="js1" value="B"> B. 53<br><br>
-        <input type="radio" name="js1" value="C"> C. 2<br><br>
-        <input type="radio" name="js1" value="D"> D. Error<br>
-    </div>
-    
-    <div>
-        <p>2. Tipe data apa yang dihasilkan oleh kode berikut?<br><code>let name = "Ari";</code></p>
-        <input type="radio" name="js2" value="A"> A. Number<br><br>
-        <input type="radio" name="js2" value="B"> B. Boolean<br><br>
-        <input type="radio" name="js2" value="C"> C. String<br><br>
-        <input type="radio" name="js2" value="D"> D. Object<br>
-    </div>
-    
-    <div>
-        <p>3. Fungsi alert() dalam JavaScript digunakan untuk:</p>
-        <input type="radio" name="js3" value="A"> A. Menginput data dari pengguna<br><br>
-        <input type="radio" name="js3" value="B"> B. Menampilkan pesan pada jendela popup<br><br>
-        <input type="radio" name="js3" value="C"> C. Menyimpan data ke database<br><br>
-        <input type="radio" name="js3" value="D"> D. Menyisipkan HTML<br>
-    </div>
-    
-    <div>
-        <p>4. Manakah yang merupakan cara yang benar untuk membuat fungsi di JavaScript?</p>
-        <input type="radio" name="js4" value="A"> A. function: myFunc() {}<br><br>
-        <input type="radio" name="js4" value="B"> B. function = myFunc() {}<br><br>
-        <input type="radio" name="js4" value="C"> C. function myFunc() {}<br><br>
-        <input type="radio" name="js4" value="D"> D. func myFunc() {}<br>
-    </div>
-    
-    <div>
-        <p>5. Manakah pernyataan yang benar tentang operator === di JavaScript?</p>
-        <input type="radio" name="js5" value="A"> A. Membandingkan nilai saja, tidak tipe data<br><br>
-        <input type="radio" name="js5" value="B"> B. Sama dengan ==<br><br>
-        <input type="radio" name="js5" value="C"> C. Membandingkan nilai dan tipe data<br><br>
-        <input type="radio" name="js5" value="D"> D. Digunakan untuk penjumlahan<br>
-    </div>
-    <div>
-        <p>6. Apa kepanjangan dari CSS?</p>
-        <input type="radio" name="css1" value="a"> a. Creative Style Sheet<br><br>
-        <input type="radio" name="css1" value="b"> b. Cascading Style Sheet<br><br>
-        <input type="radio" name="css1" value="c"> c. Computer Style Sheet<br><br>
-        <input type="radio" name="css1" value="d"> d. Colorful Style Sheet<br>
-    </div>
-    
-    <div>
-        <p>7. Properti CSS apa yang digunakan untuk mengubah warna teks?</p>
-        <input type="radio" name="css2" value="a"> a. background-color<br><br>
-        <input type="radio" name="css2" value="b"> b. text-color<br><br>
-        <input type="radio" name="css2" value="c"> c. font-color<br><br>
-        <input type="radio" name="css2" value="d"> d. color<br>
-    </div>
-    
-    <div>
-        <p>8. Manakah cara yang benar untuk menyisipkan file CSS eksternal ke dalam file HTML?</p>
-        <input type="radio" name="css3" value="a"> a. &lt;css src="style.css"&gt;<br><br>
-        <input type="radio" name="css3" value="b"> b. &lt;style src="style.css"&gt;&lt;/style&gt;<br><br>
-        <input type="radio" name="css3" value="c"> c. &lt;link rel="stylesheet" href="style.css"&gt;<br><br>
-        <input type="radio" name="css3" value="d"> d. &lt;stylesheet&gt;style.css&lt;/stylesheet&gt;<br>
-    </div>
-    
-    <div>
-        <p>9. Bagaimana cara mengatur border 1px solid hitam di CSS?</p>
-        <input type="radio" name="css4" value="a"> a. border: 1px black solid;<br><br>
-        <input type="radio" name="css4" value="b"> b. border: solid 1px black;<br><br>
-        <input type="radio" name="css4" value="c"> c. border: 1px solid black;<br><br>
-        <input type="radio" name="css4" value="d"> d. border-color: black 1px solid;<br>
-    </div>
-    
-    <div>
-        <p>10. Properti CSS apa yang digunakan untuk mengatur transparansi elemen?</p>
-        <input type="radio" name="css5" value="a"> a. opacity<br><br>
-        <input type="radio" name="css5" value="b"> b. transparent<br><br>
-        <input type="radio" name="css5" value="c"> c. visibility<br><br>
-        <input type="radio" name="css5" value="d"> d. alpha<br>
-    </div>
-    <div>
-        <p>11. Fungsi utama CSS adalah...</p>
-        <input type="radio" name="css6" value="a"> a. Menambahkan interaktivitas ke website<br><br>
-        <input type="radio" name="css6" value="b"> b. Memisahkan konten dari tampilan visual<br><br>
-        <input type="radio" name="css6" value="c"> c. Menyimpan data pengguna<br><br>
-        <input type="radio" name="css6" value="d"> d. Membuat struktur HTML<br>
-    </div>
-    
-    <div>
-        <p>12. Sintaks yang benar untuk memilih semua elemen dengan class "button" adalah...</p>
-        <input type="radio" name="css7" value="a"> a. #button<br><br>
-        <input type="radio" name="css7" value="b"> b. .button<br><br>
-        <input type="radio" name="css7" value="c"> c. button<br><br>
-        <input type="radio" name="css7" value="d"> d. *button<br>
-    </div>
-    
-    <div>
-        <p>13. Urutan yang benar dalam box model CSS (dari dalam ke luar) adalah...</p>
-        <input type="radio" name="css8" value="a"> a. Margin > Padding > Border > Content<br><br>
-        <input type="radio" name="css8" value="b"> b. Content > Border > Padding > Margin<br><br>
-        <input type="radio" name="css8" value="c"> c. Content > Padding > Border > Margin<br><br>
-        <input type="radio" name="css8" value="d"> d. Padding > Content > Margin > Border<br>
-    </div>
-    
-    <div>
-        <p>14. Properti untuk membuat teks berada di tengah secara horizontal adalah...</p>
-        <input type="radio" name="css9" value="a"> a. vertical-align: center;<br><br>
-        <input type="radio" name="css9" value="b"> b. align-items: center;<br><br>
-        <input type="radio" name="css9" value="c"> c. text-align: center;<br><br>
-        <input type="radio" name="css9" value="d"> d. position: center;<br>
-    </div>
-    
-    <div>
-        <p>15. Media query yang tepat untuk menargetkan layar berukuran maksimal 768px adalah...</p>
-        <input type="radio" name="css10" value="a"> a. @media screen and (max-width: 768px)<br><br>
-        <input type="radio" name="css10" value="b"> b. @media (max-size: 768px)<br><br>
-        <input type="radio" name="css10" value="c"> c. @media screen (width &lt; 768px)<br><br>
-        <input type="radio" name="css10" value="d"> d. @media max-width=768px<br>
+        <h1>Kuis</h1>
+        <div id="quiz-container">
+            <div>
+                <h5 id="question-number">Soal 1</h5>
+                <p id="question-text">Teks pertanyaan akan muncul di sini.</p>
+                <img id="question-image" src="" alt="" style="display: none;">
+                <div id="answer-options">
+                    </div>
+                <div id="answer-input" style="display: none;">
+                    <input type="text">
+                </div>
+            </div>
+            <div>
+                <button id="prev-button" disabled>Sebelumnya</button>
+                <span id="timer">Waktu: <span id="time-left"></span></span>
+                <button id="next-button">Selanjutnya</button>
+                <button id="submit-button" style="display: none;">Selesai</button>
+            </div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>Hasil Kuis</h2>
+            <p>Nilai Akhir Anda: <span id="final-score"></span></p>
+            <button id="restart-button">Ulangi Kuis</button>
+        </div>
     </div>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soal Pilihan Ganda</title>
-</head>
-<body>
-    
-</body>
-</html>
->>>>>>> cf3a305840aaa6d85da7e9bc9584d3dde2725b8e
