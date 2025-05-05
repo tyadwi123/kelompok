@@ -86,19 +86,16 @@ function selectAnswer(answer) {
     const buttons = document.querySelectorAll('#answer-options .option-button');
 
     buttons.forEach(button => {
-        const optionKey = button.textContent.charAt(0); // ambil huruf a/b/c/d
+        const optionKey = button.textContent.charAt(0); // ambil huruf
         if (optionKey === correctAnswer) {
-            // Highlight jawaban benar (hijau)
-            button.style.backgroundColor = '#38ada9';
+            button.style.backgroundColor = 'green';
             button.style.color = 'white';
         } else if (optionKey === answer) {
-            // Highlight jawaban user yang salah (merah)
             if (answer !== correctAnswer) {
-                button.style.backgroundColor = '#e55039';
+                button.style.backgroundColor = 'red';
                 button.style.color = 'white';
             }
         } else {
-            // Reset opsi lain
             button.style.backgroundColor = '';
             button.style.color = '';
         }
