@@ -1,0 +1,159 @@
+{
+    "HTML": [
+      {
+        "question": "Apa kepanjangan dari HTML?",
+        "options": {
+          "a": "Hyperlinks and Text Markup Language",
+          "b": "Home Tool Markup Language",
+          "c": "Hyper Text Markup Language",
+          "d": "High Text Markup Language"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "Tag HTML apa yang digunakan untuk membuat paragraf?",
+        "options": {
+          "a": "<p>",
+          "b": "<para>",
+          "c": "<paragraph>",
+          "d": "<text>"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "Tag HTML yang digunakan untuk membuat tabel adalah?",
+        "options": {
+          "a": "<table>",
+          "b": "<tab>",
+          "c": "<tbl>",
+          "d": "<tb>"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "Untuk membuat daftar bernomor, tag apa yang digunakan?",
+        "options": {
+          "a": "<ul>",
+          "b": "<ol>",
+          "c": "<dl>",
+          "d": "<list>"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "Apa fungsi tag <title> di HTML?",
+        "options": {
+          "a": "Menampilkan judul di dalam halaman web",
+          "b": "Menampilkan judul di tab browser",
+          "c": "Menjadikan teks menjadi heading",
+          "d": "Menambahkan caption di gambar"
+        },
+        "answer": "b"
+      }
+    ],
+    "CSS": [
+      {
+        "question": "Apa kepanjangan dari CSS?",
+        "options": {
+          "a": "Creative Style Sheet",
+          "b": "Cascading Style Sheet",
+          "c": "Computer Style Sheet",
+          "d": "Colorful Style Sheet"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "Properti CSS apa yang digunakan untuk mengubah warna teks?",
+        "options": {
+          "a": "background-color",
+          "b": "text-color",
+          "c": "font-color",
+          "d": "color"
+        },
+        "answer": "d"
+      },
+      {
+        "question": "Manakah cara yang benar untuk menyisipkan file CSS eksternal ke dalam file HTML?",
+        "options": {
+          "a": "<css src=\"style.css\">",
+          "b": "<style src=\"style.css\"></style>",
+          "c": "<link rel=\"stylesheet\" href=\"style.css\">",
+          "d": "<stylesheet>style.css</stylesheet>"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "Bagaimana cara mengatur border 1px solid hitam di CSS?",
+        "options": {
+          "a": "border: 1px black solid;",
+          "b": "border: solid 1px black;",
+          "c": "border: 1px solid black;",
+          "d": "border-color: black 1px solid;"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "Properti CSS apa yang digunakan untuk mengatur transparansi elemen?",
+        "options": {
+          "a": "opacity",
+          "b": "transparent",
+          "c": "visibility",
+          "d": "alpha"
+        },
+        "answer": "a"
+      }
+      
+    ],
+    "JavaScript": [
+      {
+        "question": "Apa output dari kode berikut?\nlet x = 5;\nlet y = 3;\nconsole.log(x + y);",
+        "options": {
+          "a": "8",
+          "b": "53",
+          "c": "2",
+          "d": "Error"
+        },
+        "answer": "a"
+      },
+      {
+        "question": "Tipe data apa yang dihasilkan oleh kode berikut?\nlet name = \"Ari\";",
+        "options": {
+          "a": "Number",
+          "b": "Boolean",
+          "c": "String",
+          "d": "Object"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "Fungsi alert() dalam JavaScript digunakan untuk:",
+        "options": {
+          "a": "Menginput data dari pengguna",
+          "b": "Menampilkan pesan pada jendela popup",
+          "c": "Menyimpan data ke database",
+          "d": "Menyisipkan HTML"
+        },
+        "answer": "b"
+      },
+      {
+        "question": "Manakah yang merupakan cara yang benar untuk membuat fungsi di JavaScript?",
+        "options": {
+          "a": "function: myFunc() {}",
+          "b": "function = myFunc() {}",
+          "c": "function myFunc() {}",
+          "d": "func myFunc() {}"
+        },
+        "answer": "c"
+      },
+      {
+        "question": "Manakah pernyataan yang benar tentang operator === di JavaScript?",
+        "options": {
+          "a": "Membandingkan nilai saja, tidak tipe data",
+          "b": "Sama dengan ==",
+          "c": "Membandingkan nilai dan tipe data",
+          "d": "Digunakan untuk penjumlahan"
+        },
+        "answer": "c"
+      }
+    ]
+  }

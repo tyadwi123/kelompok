@@ -1,0 +1,151 @@
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+#quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Gaya Pertanyaan */
+#question-number {
+    color: #2d3436;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+#question-text {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #2d3436;
+}
+
+#question-image {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Gaya Opsi Jawaban */
+#answer-options {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.option-button {
+    padding: 12px 20px;
+    border: 2px solid #dfe6e9;
+    border-radius: 5px;
+    background: #f8f9fa;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.option-button:hover {
+    background: #4a69bd;
+    color: white;
+    border-color: #4a69bd;
+}
+
+/* Gaya Input Jawaban */
+#answer-input input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #dfe6e9;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Gaya Navigasi */
+#quiz-container > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#prev-button, #next-button {
+    background: #0984e3;
+    color: white;
+}
+
+#prev-button:disabled {
+    background: #b2bec3;
+    cursor: not-allowed;
+}
+
+#submit-button, #restart-button {
+    background: #00b894;
+    color: white;
+}
+
+#timer {
+    color: #d63031;
+    font-weight: bold;
+}
+
+/* Gaya Hasil Akhir */
+#result-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#final-score {
+    font-size: 1.5em;
+    color: #00b894;
+    font-weight: bold;
+    display: block;
+    margin: 15px 0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    #quiz-container {
+        padding: 20px;
+    }
+    
+    #answer-options {
+        grid-template-columns: 1fr;
+    }
+    
+    #quiz-container > div:last-child {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
