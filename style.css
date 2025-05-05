@@ -100,3 +100,47 @@ button {
     color: #00b894;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #quiz-container {
+        padding: 15px;
+    }
+
+    #question-number {
+        font-size: 1em;
+    }
+
+    #question-text {
+        font-size: 1em;
+    }
+
+    #answer-options {
+        gap: 15px;
+    }
+
+    .option-button {
+        padding: 10px 15px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #result-container {
+        padding: 20px;
+    }
+
+    #final-score {
+        font-size: 1.2em;
+    }
+}
