@@ -19,7 +19,12 @@ async function loadQuestions() {
             throw new Error("Data JSON kosong");
         }
         
-        questions = quizData.HTML; // Default ke kategori HTML
+        questions = [
+            ...quizData.HTML, 
+            ...quizData.CSS, 
+            ...quizData.JavaScript
+        ];
+         // Default ke kategori HTML
         return questions;
     } catch (error) {
         console.error("Error:", error);
