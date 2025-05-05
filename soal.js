@@ -1,4 +1,3 @@
-
 let currentQuestion = 0;
 let userAnswers = [];
 let score = 0;
@@ -9,26 +8,23 @@ let quizData = {};
 // Fungsi untuk memuat pertanyaan
 async function loadQuestions() {
     try {
-        // Coba load dari file eksternal
         const response = await fetch('data.json');
         if (!response.ok) throw new Error("Gagal memuat data.json");
         quizData = await response.json();
-        
-        // Jika data kosong, gunakan data fallback
+
         if (!quizData.HTML || quizData.HTML.length === 0) {
             throw new Error("Data JSON kosong");
         }
-        
+
         questions = [
             ...quizData.HTML, 
             ...quizData.CSS, 
             ...quizData.JavaScript
         ];
-         // Default ke kategori HTML
+
         return questions;
     } catch (error) {
         console.error("Error:", error);
-        // Fallback ke data yang disematkan
         quizData = {
             "HTML": [
                 {
@@ -41,7 +37,6 @@ async function loadQuestions() {
                     },
                     "answer": "c"
                 }
-                // ... (data lainnya bisa ditambahkan di sini)
             ]
         };
         questions = quizData.HTML;
@@ -54,26 +49,25 @@ function showQuestion() {
     const question = questions[currentQuestion];
     document.getElementById('question-number').textContent = `Soal ${currentQuestion + 1}`;
     document.getElementById('question-text').textContent = question.question;
-    
+
     const optionsDiv = document.getElementById('answer-options');
     optionsDiv.innerHTML = '';
-    
+
     for (const [key, value] of Object.entries(question.options)) {
         const button = document.createElement('button');
         button.className = 'option-button';
         button.textContent = `${key}. ${value}`;
         button.onclick = () => selectAnswer(key);
-        
+
         // Highlight jawaban yang sudah dipilih
         if (userAnswers[currentQuestion] === key) {
             button.style.backgroundColor = '#4a69bd';
             button.style.color = 'white';
         }
-        
+
         optionsDiv.appendChild(button);
     }
-    
-    // Update tombol navigasi
+
     document.getElementById('prev-button').disabled = currentQuestion === 0;
     document.getElementById('next-button').style.display = 
         currentQuestion === questions.length - 1 ? 'none' : 'block';
@@ -83,8 +77,35 @@ function showQuestion() {
 
 // Fungsi untuk memilih jawaban
 function selectAnswer(answer) {
+    const question = questions[currentQuestion];
+    const correctAnswer = question.answer;
+
     userAnswers[currentQuestion] = answer;
-    showQuestion(); // Refresh tampilan untuk highlight jawaban
+
+    // Ambil semua tombol opsi
+    const buttons = document.querySelectorAll('#answer-options .option-button');
+
+    buttons.forEach(button => {
+        const optionKey = button.textContent.charAt(0); // ambil huruf a/b/c/d
+        if (optionKey === correctAnswer) {
+            // Highlight jawaban benar (hijau)
+            button.style.backgroundColor = '#38ada9';
+            button.style.color = 'white';
+        } else if (optionKey === answer) {
+            // Highlight jawaban user yang salah (merah)
+            if (answer !== correctAnswer) {
+                button.style.backgroundColor = '#e55039';
+                button.style.color = 'white';
+            }
+        } else {
+            // Reset opsi lain
+            button.style.backgroundColor = '';
+            button.style.color = '';
+        }
+
+        // Disable semua tombol setelah klik
+        button.disabled = true;
+    });
 }
 
 // Fungsi untuk menghitung skor
@@ -119,8 +140,7 @@ function finishQuiz() {
 async function initializeQuiz() {
     await loadQuestions();
     showQuestion();
-    
-    // Timer
+
     const timerInterval = setInterval(() => {
         if (timeLeft > 0) {
             timeLeft--;
@@ -131,7 +151,6 @@ async function initializeQuiz() {
         }
     }, 1000);
 
-    // Event listeners
     document.getElementById('next-button').addEventListener('click', () => {
         if (currentQuestion < questions.length - 1) {
             currentQuestion++;
@@ -152,5 +171,4 @@ async function initializeQuiz() {
     });
 }
 
-// Jalankan kuis ketika DOM siap
 document.addEventListener('DOMContentLoaded', initializeQuiz);
