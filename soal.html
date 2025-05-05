@@ -8,29 +8,27 @@
 </head>
 <body>
     <div>
-        <h1>Kuis</h1>
+        <h1>Test Seleksi Mandiri</h1>
         <div id="quiz-container">
             <div>
                 <h5 id="question-number">Soal 1</h5>
-                <p id="question-text">Teks pertanyaan akan muncul di sini.</p>
-                <img id="question-image" src="" alt="" style="display: none;">
-                <div id="answer-options">
-                    </div>
-                <div id="answer-input" style="display: none;">
-                    <input type="text">
-                </div>
+                <p id="question-text"></p>
+                <div id="answer-options"></div>
             </div>
-            <div>
+            <div class="navigation">
                 <button id="prev-button" disabled>Sebelumnya</button>
-                <span id="timer">Waktu: <span id="time-left"></span></span>
+                <span id="timer">Waktu: <span id="time-left">00:15:30</span></span>
                 <button id="next-button">Selanjutnya</button>
                 <button id="submit-button" style="display: none;">Selesai</button>
             </div>
         </div>
+        
         <div id="result-container" style="display: none;">
             <h2>Hasil Kuis</h2>
-            <p>Nilai Akhir Anda: <span id="final-score"></span></p>
+            <p>Nilai Akhir Anda: <span id="final-score">0</span></p>
             <button id="restart-button">Ulangi Kuis</button>
         </div>
     </div>
+    <script src="soal.js"></script>
+</body>
 </html>
